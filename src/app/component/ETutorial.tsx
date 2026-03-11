@@ -81,7 +81,7 @@ const ETutorial: React.FC = () => {
           {/* Right Side: List items (Brought closer to the image with gap-8) */}
           <div className="w-full lg:w-1/2 lg:pl-4">
             <h2 className="text-[#005f6b] text-[32px] font-bold mb-12 tracking-tight">
-              Quadrant-III: Discussion Forum
+              Quadrant-III: Discussion Foorum
             </h2>
             
             <div className="space-y-10">
