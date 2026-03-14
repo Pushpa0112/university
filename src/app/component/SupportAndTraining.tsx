@@ -22,8 +22,8 @@ const SupportAndTraining = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-12 px-6 md:px-12 font-sans overflow-hidden">
-      <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-start gap-12">
+    <section className="bg-white py-12 px-6 md:px-12 font-sans overflow-hidden">
+      <div className="max-w-[1440px]  flex flex-col lg:flex-row items-start gap-12">
         
         {/* Left Side: Decreased Image size to match the reference screenshot */}
         <div className="w-full lg:w-[45%]">
@@ -52,18 +52,18 @@ const SupportAndTraining = () => {
                 }`}
               >
                 {/* Number Box - Default: White | Hover: Yellow */}
-                <div className="flex-shrink-0 w-14 h-14 bg-white rounded-xl shadow-[0_4px_15px_rgba(0,0,0,0.08)] flex items-center justify-center transition-all duration-300 group-hover:bg-[#fcc419] border border-gray-50">
-                  <span className="text-gray-700 text-[24px] font-bold group-hover:text-[#005f63]">
+                <div className="flex-shrink-0 w-16 h-16 bg-gray-200 rounded-xl shadow-[0_4px_15px_rgba(0,0,0,0.08)] flex items-center justify-center transition-all duration-300 group-hover:bg-[#FFDB58] ">
+                  <span className="text-[#025E68] text-[24px] font-bold group-hover:text-[#005f63]">
                     {item.id}
                   </span>
                 </div>
 
                 {/* Text Content - Default: Dark | Hover: White */}
                 <div className="flex flex-col">
-                  <h3 className="text-[#1a1a1a] text-[19px] font-bold leading-tight transition-colors duration-300 group-hover:text-white">
+                  <h3 className="text-[#025E68] text-[20px] font-bold leading-tight transition-colors duration-300 group-hover:text-white">
                     {item.title}
                   </h3>
-                  <p className="text-gray-500 text-[15px] mt-2 leading-relaxed transition-colors duration-300 group-hover:text-gray-100">
+                  <p className="text-gray-500 text-[15px] mt-2 leading-tight transition-colors duration-300 group-hover:text-gray-100">
                     {item.desc}
                   </p>
                 </div>

@@ -26,47 +26,40 @@ const AssessmentComponent: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row w-full bg-white mx-auto min-h-[650px] overflow-hidden">
+    <div className="flex flex-col lg:flex-row bg-white min-h-[650px] overflow-hidden">
       
-      {/* Left Content Section */}
-      <div className="w-full lg:w-1/2 p-8 md:p-16 lg:p-20 flex flex-col justify-center">
-        <h2 className="text-4xl font-bold text-[#005a64] mb-14 tracking-tight">
+      {/* Left Content Section - Adjusted for left alignment */}
+      <div className="w-full lg:w-1/2 flex flex-col items-start justify-center p-8 md:p-16 lg:pl-32 lg:pr-10">
+        
+        {/* Heading - Left Aligned */}
+        <h2 className="text-4xl font-bold text-[#025E68] mb-16 tracking-tight text-left">
           Quadrant-IV: Assessment
         </h2>
 
-        <div className="relative">
-          {/* Vertical Connector Line */}
-          <div 
-            className="absolute left-[24px] top-8 bottom-8 w-[1.5px] bg-gray-200 z-0" 
-            aria-hidden="true"
-          />
-
-          <div className="space-y-14">
+        <div className="relative max-w-md w-full">
+          <div className="space-y-12">
             {steps.map((step) => (
-              <div key={step.id} className="relative flex items-start z-10 group cursor-pointer">
+              <div key={step.id} className="relative flex items-center  group cursor-pointer p-4 rounded-2xl  group hover:bg-[#f0f2f5]" >
                 
-                {/* Number Box - Hover: Background fills teal, text turns white */}
-                <div className="flex-shrink-0 w-12 h-12 bg-white border-[2px] border-gray-300 rounded-xl flex items-center justify-center shadow-sm 
+                {/* Number Box */}
+                <div className="flex-shrink-0 w-16 h-16 bg-gray-200 rounded-[10px] flex items-center justify-center shadow-sm 
                                 transition-all duration-300 ease-in-out
-                                group-hover:bg-[#005a64] group-hover:border-yellow-400 group-hover:scale-110">
-                  <span className="text-xl font-bold text-gray-700 transition-colors duration-300 group-hover:text-white">
+                                group-hover:bg-[#025E68] ">
+                  <span className="text-2xl font-bold text-[#025E68] transition-colors duration-300 group-hover:text-[#FFDB58] group hover:bg-[#f0f2f5]">
                     {step.id}
                   </span>
                 </div>
 
                 {/* Text Content */}
-                <div className="ml-8 pt-1">
+                <div className="ml-8">
                   <div className="flex flex-col">
-                    {/* Horizontal Line - Hover: Width increases and color changes */}
-                    <div className="w-12 h-[2px] bg-gray-300 mb-4 transition-all duration-300 group-hover:w-20 group-hover:bg-yellow-400" />
+                     
                     
-                    {/* Title - Hover: Text shifts right slightly */}
-                    <h3 className="text-xl font-extrabold text-gray-900  mb-3 transition-transform duration-300
-                     group-hover:translate-x-2 group-hover:text-[#005a64]">
+                    <h3 className="text-[22px] font-bold text-[#025E68] mb-1 transition-colors duration-300">
                       {step.title}
                     </h3>
                     
-                    <p className="text-gray-500 text-base font-medium ">
+                    <p className="text-gray-500 text-[15px] leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -77,20 +70,16 @@ const AssessmentComponent: React.FC = () => {
         </div>
       </div>
 
-      {/* Right Image Section - High Aspect & Thick White Border */}
-      <div className="w-full lg:w-1/2 p-6 md:p-10 lg:p-12 flex items-center justify-center">
-        <div className="relative w-full h-[500px] md:h-[600px] lg:h-full max-h-[750px] group">
-          
-          {/* Framed Image */}
-          <div className="w-full h-full  rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-700 ">
+      {/* Right Image Section */}
+      <div className="w-full lg:w-1/2 p-6 md:p-10 lg:p-20 flex items-center justify-center">
+        <div className="relative w-full h-[450px] md:h-[500px] lg:h-[650px]">
+          <div className="w-full h-full rounded-[10px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.12)]">
             <img 
               src="/photo-1434030216411-0b793f4b4173.jpg" 
               alt="Assessment focus"
               className="w-full h-full object-cover"
             />
           </div>
-
-          
         </div>
       </div>
 

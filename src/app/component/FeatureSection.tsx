@@ -66,7 +66,7 @@ export default function FeatureSection() {
           <div className="w-full lg:w-1/2">
             {/* Title Section with Shadow effect you requested */}
             <div className="mb-12 inline-block">
-              <h2 className="text-4xl md:text-5xl font-bold text-[#003d4d] leading-tight drop-shadow-sm">
+              <h2 className="text-4xl  font-bold text-[#025E68] leading-tight drop-shadow-sm">
                 Support for the <br /> 
                 <span className="text-[#005a6e]">Four-Quadrant Approach</span>
               </h2>

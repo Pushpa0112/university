@@ -33,7 +33,7 @@ const Header = () => {
         {/* Apply Now Button */}
         <Link 
           href="/apply" 
-          className="bg-[#005f6b] text-white px-6 py-2 rounded-md font-bold hover:bg-[#004a54] transition-all shadow-md"
+          className="bg-[#024B53] text-white px-6 py-2 rounded-md font-semibold transition-all shadow-md"
         >
           Apply Now
         </Link>

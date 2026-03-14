@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const AboutUs = () => {
   return (
-    <section suppressHydrationWarning={true} className="w-full py-16 md:py-24 font-sans bg-white overflow-hidden">
+    <section suppressHydrationWarning={true} className="w-full py-16 md:py-24 font-outfit bg-white overflow-hidden">
       {/* Adjusted padding: lg:pl-20 pulls content to the left, lg:pr-32 gives space on the right */}
       <div suppressHydrationWarning={true} className="w-full px-6 md:px-16  lg:pr-32 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         

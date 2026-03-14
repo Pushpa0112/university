@@ -22,12 +22,12 @@ const SeamlessIntegration = () => {
   ];
 
   return (
-    <section className="bg-white font-sans overflow-hidden ">
-      <div className="max-w-[1440px]  flex flex-col lg:flex-row items-stretch">
+    <section className="bg-white font-sans overflow-hidden py-12 md:py-20">
+      <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-24 gap-12">
         
         {/* Left Side: Content */}
-        <div className="w-full lg:w-1/2 py-16 px-6 md:px-12 lg:pl-24 lg:pr-12 flex flex-col justify-center">
-          <h2 className="text-[#005f63] text-[36px] font-bold mb-12 tracking-tight">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+          <h2 className="text-[#025E68] text-[36px] md:text-[44px] font-bold mb-12 tracking-tight">
             Seamless Integration
           </h2>
 
@@ -35,21 +35,21 @@ const SeamlessIntegration = () => {
             {steps.map((step) => (
               <div 
                 key={step.id} 
-                className="group flex items-center gap-8 p-4 rounded-xl transition-all duration-300 hover:translate-x-4 cursor-pointer"
+                className="group flex items-center gap-8 p-4 rounded-xl transition-all duration-300 hover:-translate-x-2 cursor-pointer"
               >
-                {/* Number Box - Image ke mutabik Dark Teal background */}
-                <div className="flex-shrink-0 w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center transition-transform group-hover:bg-[#005f63] group-hover:scale-110">
-                  <span className="text-gray-600 text-[42px] font-bold group-hover:text-yellow-400">
+                {/* Number Box - Default White, Hover Dark Teal */}
+                <div className="flex-shrink-0 w-18 h-18 bg-gray-200 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] flex items-center justify-center transition-all duration-300 group-hover:bg-[#2d5a61] group-hover:scale-105">
+                  <span className="text-[#025E68] text-2xl font-bold transition-colors duration-300 group-hover:text-[#ffd666]">
                     {step.id}
                   </span>
                 </div>
 
                 {/* Text Content */}
-                <div className="transition-colors">
-                  <h3 className="text-black text-[22px] font-bold leading-tight group-hover:text-[#005f63]">
+                <div>
+                  <h3 className="text-[#025E68] text-[24px] font-bold leading-tight transition-colors duration-300 group-hover:text-[#005f63]">
                     {step.title}
                   </h3>
-                  <p className="text-gray-500 text-[18px] mt-1">
+                  <p className="text-gray-500 text-[15px] mt-1">
                     {step.desc}
                   </p>
                 </div>
@@ -58,14 +58,13 @@ const SeamlessIntegration = () => {
           </div>
         </div>
 
-        {/* Right Side: Image - Fixed Height as per Screenshot */}
-      <div className="w-full lg:w-[50%] flex flex-col justify-center lg:pl-30 relative">
-          <div className="w-full h-full lg:w-[88%] min-h-[200px] lg:min-h-0">
+        {/* Right Side: Image - Sized to match content height */}
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <div className="relative w-full max-w-[500px] aspect-[4/5] lg:aspect-[1/1.3]">
             <img 
               src="/photo-1522071820081-009f0129c71c.jpg" 
               alt="Team working on integration" 
-              className="w-full h-full object-cover rounded-xl  shadow-sm"
-              style={{ objectPosition: 'center top' }}
+              className="w-full h-full object-cover rounded-[10px] shadow-2xl"
             />
           </div>
         </div>

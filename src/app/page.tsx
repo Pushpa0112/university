@@ -15,6 +15,7 @@ import ScalablePlatform from "./component/ScalablePlatform";
 import RevenueModel from "./component/RevenueModel";
 import SupportAndTraining from "./component/SupportAndTraining";
 import PartnersSection from "./component/PartnersSection";
+import UniversitySlider from "./component/UniversitySlider";
 
 
 
@@ -37,6 +38,7 @@ export default function Home() {
     <RevenueModel/>
     <SupportAndTraining/>
     <PartnersSection/>
+    <UniversitySlider/>
     
   
     
