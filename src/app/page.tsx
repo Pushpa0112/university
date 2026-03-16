@@ -16,6 +16,7 @@ import RevenueModel from "./component/RevenueModel";
 import SupportAndTraining from "./component/SupportAndTraining";
 import PartnersSection from "./component/PartnersSection";
 import UniversitySlider from "./component/UniversitySlider";
+import CampusPartnersSection from "./component/CampusPartnersSection";
 
 
 
@@ -39,6 +40,7 @@ export default function Home() {
     <SupportAndTraining/>
     <PartnersSection/>
     <UniversitySlider/>
+    <CampusPartnersSection/>
     
   
     
